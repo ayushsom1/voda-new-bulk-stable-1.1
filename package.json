@@ -1,0 +1,47 @@
+{
+  "name": "voda",
+  "version": "1.0.0",
+  "description": "Vodafone number blocking automation using Playwright",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "login": "playwright test tests/login.spec.js",
+    "batch1": "playwright test tests/api-automation.spec.js --grep 'Batch 1'",
+    "batch2": "playwright test tests/api-automation.spec.js --grep 'Batch 2'",
+    "batch3": "playwright test tests/api-automation.spec.js --grep 'Batch 3'",
+    "batch4": "playwright test tests/api-automation.spec.js --grep 'Batch 4'",
+    "batch:full": "playwright test tests/api-automation.spec.js --timeout=3700000",
+    "batch1:continuous": "playwright test tests/api-batch1-continuous.spec.js --timeout=3700000",
+    "batch2:continuous": "playwright test tests/api-batch2-continuous.spec.js --timeout=3700000",
+    "batch3:continuous": "playwright test tests/api-batch3-continuous.spec.js --timeout=3700000",
+    "batch4:continuous": "playwright test tests/api-batch4-continuous.spec.js --timeout=3700000",
+    "batch:continuous:all": "playwright test tests/api-batch*-continuous.spec.js --timeout=3700000 && node generate-consolidated-report.js",
+    "api:block": "playwright test tests/api-block-number.spec.js",
+    "api:60min": "playwright test tests/api-continuous-60min.spec.js --timeout=3700000",
+    "api:automation": "playwright test tests/api-automation.spec.js",
+    "generate:report": "node generate-report.js",
+    "generate:consolidated": "node generate-consolidated-report.js",
+    "test:consolidated": "node test-consolidated-report.js",
+    "install:browsers": "playwright install",
+    "show-report": "playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "vodafone",
+    "testing",
+    "api"
+  ],
+  "author": "Ayush Som",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.45.0"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
