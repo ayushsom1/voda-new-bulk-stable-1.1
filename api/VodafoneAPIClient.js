@@ -242,6 +242,7 @@ export class VodafoneAPIClient {
         captcha: captchaValue
       });
 
+
       const searchResponse = await this.apiContext.post('/cPOSWeb/jsp/inventory/cellNumberBlockRelease.do?method=getViewAll', {
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
@@ -492,8 +493,6 @@ export class VodafoneAPIClient {
       await Promise.all(batchPromises);
       operationCount += batch.length;
       
-      // PHASE 3: Minimal delay between batches (100ms instead of 200ms)
-      await new Promise(resolve => setTimeout(resolve, 100));
     }
 
     const successful = results.filter(r => r.success);
