@@ -7,7 +7,7 @@ export class LoginPage {
    */
   constructor(page) {
     this.page = page;
-    this.url = 'https://cpos4.vodafoneidea.com';
+    this.url = 'https://cpos3.vodafoneidea.com';
 
     // Login page selectors
     this.usernameInput = page.locator('input[name="username"]');
@@ -127,7 +127,7 @@ export class LoginPage {
   }
 
   async navigateToNumberBlockUnblockDirect() {
-    await this.page.goto('https://cpos4.vodafoneidea.com/cPOSWeb/switchMod.do?prefix=/jsp/inventory&page=/cellNumberBlockRelease.do?method=getView&fromMenu=Y');
+    await this.page.goto('https://cpos3.vodafoneidea.com/cPOSWeb/switchMod.do?prefix=/jsp/inventory&page=/cellNumberBlockRelease.do?method=getView&fromMenu=Y');
   }
 
   async fillBlockNumberForm(numberStatus = '194', cellNumber = '123456789') {

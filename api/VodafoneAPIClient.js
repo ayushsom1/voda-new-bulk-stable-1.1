@@ -1,12 +1,12 @@
 import { request } from '@playwright/test';
 
 /**
- * Vodafone CPOS4 API Client
+ * Vodafone cpos3 API Client
  * Provides API-based access to blocking/unblocking operations
  */
 export class VodafoneAPIClient {
   constructor() {
-    this.baseURL = 'https://cpos4.vodafoneidea.com';
+    this.baseURL = 'https://cpos3.vodafoneidea.com';
     this.apiContext = null;
     this.sessionCookies = null;
     this.authToken = null;
@@ -38,7 +38,7 @@ export class VodafoneAPIClient {
   }
 
   /**
-   * Authenticate with the Vodafone CPOS4 system
+   * Authenticate with the Vodafone cpos3 system
    * @param {string} username 
    * @param {string} password 
    * @param {string} [captcha] - Optional captcha value

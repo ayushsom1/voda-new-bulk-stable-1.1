@@ -1,6 +1,6 @@
 # Voda Test Automation
 
-This project contains automated tests for the Voda CPOS4 system using Playwright.
+This project contains automated tests for the Voda cpos3 system using Playwright.
 
 ## Features
 

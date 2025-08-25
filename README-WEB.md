@@ -39,8 +39,8 @@ The web interface will be available at:
 ## Using the Web Interface
 
 ### Configuration Section
-- **Username**: Your Vodafone CPOS4 username
-- **Password**: Your Vodafone CPOS4 password  
+- **Username**: Your Vodafone cpos3 username
+- **Password**: Your Vodafone cpos3 password  
 - **Duration**: How long to run continuous automation (in minutes)
 
 ### Phone Number Batches
