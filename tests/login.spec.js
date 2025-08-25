@@ -11,7 +11,7 @@
 // const dataReader3 = new FastDataReader('data/phone_number_batch3.txt');
 // const dataReader4 = new FastDataReader('data/phone_number_batch4.txt');
 
-// test.beforeEach('Login to cpos3', async ({ page }) => {
+// test.beforeEach('Login to cpos4', async ({ page }) => {
 //   // Block CSS and image resources for faster execution
 //   await page.route('**', route => {
 //     const url = route.request().url();
