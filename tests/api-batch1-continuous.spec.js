@@ -8,7 +8,7 @@ test('API Batch 1 Continuous Automation', async () => {
   console.log('🚀 Starting Batch 1 continuous automation...\n');
   
   // Test configuration
-  const DURATION_MINUTES = 1;
+  const DURATION_MINUTES = 60;
   const DURATION_MS = DURATION_MINUTES * 60 * 1000;
   const username = 'guj1050072x1';
   const password = 'Guru@2026';
