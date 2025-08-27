@@ -8,10 +8,10 @@ test('API Batch 5 Continuous Automation', async () => {
   console.log('🚀 Starting Batch 5 continuous automation...\n');
   
   // Test configuration
-  const DURATION_MINUTES = 60;
+  const DURATION_MINUTES = 40;
   const DURATION_MS = DURATION_MINUTES * 60 * 1000;
-  const username = 'Del415649';
-  const password = 'Wild@1313';
+  const username = 'Del388535';
+  const password = 'Delhi@2025';
   
   // Batch file for this spec
   const batchFile = './data/phone_number_batch5.txt';
